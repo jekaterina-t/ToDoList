@@ -1,0 +1,132 @@
+body {
+    background-repeat: no-repeat;
+    background: url('./img/body_bg.jpg');
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&display=swap');
+
+  .container {
+    position: absolute;
+    height: 25pc;
+    width: 20pc;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 55px black;
+  }
+
+  .add-text {
+    position: absolute;
+    height: 5px;
+    width: 75%;
+    margin: auto;
+    top: 25px;
+    right: 0;
+    left: 0;
+    outline: none;
+    border: none;
+    padding: 20px;
+    padding-right: 50px;
+    font-family: 'Maven-Pro', sans-serif;
+    font-size: 14px;
+  }
+
+  .add-button {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    background: transparent;
+    border: none;
+    outline: none;
+    margin: auto;
+    top: 15px;
+    right: 35px;
+    cursor: pointer;
+  }
+
+  .add-button img {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin: auto;
+    top: 20px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  .list {
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .list::-webkit-scrollbar {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .element {
+    position: relative;
+    height: fit-content;
+    width: 55%;
+    right:-1px;
+    text-align: left;
+    transition: 0.2s;
+    padding: 10px;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 1px;
+    padding-right: 80px;
+    font-family: 'Maven-Pro', sans-serif;
+  }
+
+  .element .tick {
+    position: absolute;
+    margin: auto;
+    height: 20px;
+    top: 0;
+    bottom: 0;
+    right: 50px;
+    float: right;
+    opacity: 0.2;
+    cursor: pointer;
+    filter: grayscale(1);
+    transition: 0.2s ease-in-out;
+  }
+
+  .element .tick:hover {
+    opacity: 0.65;
+  }
+
+  .element .dustbin {
+    position: absolute;
+    margin: auto;
+    height: 30px;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    float: right;
+    opacity: 0.3;
+    cursor: pointer;
+    filter: grayscale(1);
+    transition: 0.2s ease-in-out;
+  }
+
+  .element .dustbin:hover {
+    opacity: 1;
+  }
+
+  .element:hover {
+    transform: scale(1.1);
+  }
